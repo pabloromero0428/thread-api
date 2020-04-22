@@ -49,7 +49,7 @@ int main (int argc, char *argv[]) {
         nextNumber = (char*)realloc(nextNumber, 0*sizeof(char));
         len = 0;
       }else{
-        nextNumber = (char*)realloc(nextNumber, sizeof(nextNumber) + sizeof(char));
+        nextNumber = (char*)realloc(nextNumber, sizeof(char)*(len + 1));
         nextNumber[len++] = cadena[count];
       }
     }
@@ -92,7 +92,7 @@ int main (int argc, char *argv[]) {
 }
 
 void addElement(array arr, int newValue){
-    arr.data = (int*)realloc(arr.data, sizeof(arr.data) + sizeof(int));
+    arr.data = (int*)realloc(arr.data, sizeof(int)*(arr.length[0] + 1));
     arr.data[*arr.length] = newValue;
     arr.length[0]++;
 }
