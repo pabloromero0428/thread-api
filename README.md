@@ -83,6 +83,10 @@ void cuenta (char *nombre) {
    *  ¿El resultado obtenido es acorde a lo que usted esperaba?
    Describa la técnica que usó para realizar la medición del tiempo. ¿Cuáles son las debilidades de esta técnica? ¿Existe otra forma de medir el tiempo de ejecución de un programa?
 
+![formula](Punto5/resultado.png)
+
+> El resultado no es el esperado pues la suma con hilos tardo mas; el tiempo se midio obteniendo el instante de tiempo al iniciar la suma y al terminar; luego se hizo la respectiva resta para obtener el tiempo total; La principal debilidad es que todo el proceso de obtener el tiempo gasta tiempo, por lo tanto no es del todo confiable la respuesta; algunas herramientas debugger permiten medir el tiempo que se demora el programa en ser ejecutado.
+
 6. El profesor de un curso desea un programa en lenguaje C que calcule la desviación estándar (símbolo σ o s) de las notas obtenidas por sus estudiantes en el curso 
 
 ![formula](desviacion_estandar.jpg)
